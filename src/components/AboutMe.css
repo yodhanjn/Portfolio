@@ -1,0 +1,34 @@
+.about-me {
+  text-align: center;
+  position: relative;
+  background: linear-gradient(to bottom right, #ffffff, #f8f9fa);
+}
+
+.about-me::before {
+  content: '"';
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  font-size: 4rem;
+  color: var(--primary-color);
+  opacity: 0.1;
+  font-family: Georgia, serif;
+}
+
+.about-me p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  line-height: 1.8;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .about-me p {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+  }
+}
